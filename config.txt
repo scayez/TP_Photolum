@@ -1,0 +1,4 @@
+Port=COM3
+BitRate=19200
+Timeout=0.1
+Computer_response=0.35
