@@ -1,0 +1,66 @@
+#------------------------------------------------------------------------------
+# Bentham Instruments system model attributes file
+# Created 30/08/2022 16:10:22
+# This file should NOT be edited by hand
+#------------------------------------------------------------------------------
+
+mono
+  cos alpha =  9.72700000000000E-0001
+  ZordSwitch SAM for turret,1 = -1
+end
+
+monoTurret 1
+  grating,1 = 1200
+  minimum wavelength,1 = 0
+  maximum wavelength,1 = 1100
+  sine correction,1 = 1
+  zord,1,1 = 65491
+  alpha,1,1 =  1.00300000000000E+0000
+  phase,1,1 =  7.61151400000000E+0000
+  amplitude,1,1 =  -4.5368268000000000E+0001
+  zord,1,2 = 65491
+  alpha,1,2 =  1.00300000000000E+0000
+  phase,1,2 =  7.61151400000000E+0000
+  amplitude,1,2 =  -4.5368268000000000E+0001
+  grating,2 = 600
+  minimum wavelength,2 = 0
+  maximum wavelength,2 = 2500
+  sine correction,2 = 1
+  zord,2,1 = 917905
+  alpha,2,1 =  9.99700000000000E-0001
+  phase,2,1 =  7.61151400000000E+0000
+  amplitude,2,1 =  -4.5368268000000000E+0001
+  zord,2,2 = 917905
+  alpha,2,2 =  9.99700000000000E-0001
+  phase,2,2 = 7.61151400000000E+0000
+  amplitude,2,2 =  -4.5368268000000000E+0001
+  high current threshold = 0
+  move speed = 9
+  move current = 1
+  idle current = 8
+  microstepping = 128
+  settle time = 100
+end
+
+fwheel
+  settle time = 2000
+  filter,1 =  0.00000000000000E+0000
+  filter,2 =  4.00000000000000E+0002
+  filter,3 =  7.00000000000000E+0002
+  filter,4 =  1.25000000000000E+0003
+  filter,5 =  2.00000000000000E+0003
+  filter,6 =  0.00000000000000E+0000
+  move at each wavelength = 1
+  filter park offset = 0
+end
+
+~System
+  dispersion multiplier = 1.500
+  stop count = 1.000
+  dark I integration time = 5.000
+  dark I delay = 5.000
+  225 277 input = 1
+  allow negative = -1
+  virtual instruments dll = 
+  group = ,,,,,,mono,
+end
