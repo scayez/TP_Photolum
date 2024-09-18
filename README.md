@@ -13,7 +13,8 @@
   - System.atr
   - System.cfg
   - logo.png
-  - Threads_init_acquire.py
-  - ui_photolum.ui
+  - Threads_init_acquire.py (les classes pour l'acquisition et l'initialisation du port série)
+  - ui_photolum.ui (l'interface grfaphique utilisateur)
+  - config.txt (les config de la liaison série)
 - Les fichiers contenus dans [prolific_pl2303] windows usb serial adapter sont les drivers du câble d'adaptation USB/Série utilié pour le SR830.
   
